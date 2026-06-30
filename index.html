@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You 🤍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="floating-hearts">
+        <span>🤍</span><span>🌸</span><span>🤍</span><span>🌸</span><span>🤍</span>
+    </div>
+
+    <div class="container">
+        <div class="heart-icon">🌸</div>
+        <h1>I'm So Sorry...</h1>
+        <p class="subtitle">I made this for you. Please open it?</p>
+
+        <div class="card" id="apologyCard">
+            <button class="open-btn" onclick="revealMessage()">Open My Letter 💌</button>
+            
+            <div class="message hidden" id="secretMessage">
+                
+                <div class="visual-slot">
+                    <img src="https://media.tenor.com/y26Y974-xlYAAAAi/and-sorry.gif" alt="Cute Apology GIF">
+                </div>
+
+                <h2>To the girl who means the world to me,</h2>
+                
+                <p>I am deeply sorry for bringing up your past. It was completely wrong of me to do, and it breaks my heart knowing that I caused you pain or made you feel uncomfortable. Your trust means everything to me, and I want to protect your peace, not disrupt it.</p>
+                
+                <p>You deserve to feel completely safe, valued, and loved with me. I promise to be more mindful, to listen better, and to focus entirely on the beautiful future we are building together.</p>
+                
+                <p class="signature">With all my love, <br><span>Sujal</span></p>
+
+                <hr class="divider">
+
+                <!-- 3 VIDEOS SECTION -->
+                <h3 class="gallery-title">Some of my favorite moments... 🎥</h3>
+                <div class="video-gallery">
+                    
+                    <!-- Video 1 -->
+                    <div class="video-item">
+                        <iframe src="YOUR_VIDEO_LINK_1" allowfullscreen></iframe>
+                        <p class="video-caption">Moment One ✨</p>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="video-item">
+                        <iframe src="YOUR_VIDEO_LINK_2" allowfullscreen></iframe>
+                        <p class="video-caption">Moment Two 💫</p>
+                    </div>
+
+                    <!-- Video 3 -->
+                    <div class="video-item">
+                        <iframe src="YOUR_VIDEO_LINK_3" allowfullscreen></iframe>
+                        <p class="video-caption">Moment Three 🤍</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function revealMessage() {
+            const message = document.getElementById('secretMessage');
+            const button = document.querySelector('.open-btn');
+            
+            message.classList.remove('hidden');
+            button.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
